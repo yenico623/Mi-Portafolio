@@ -8,12 +8,12 @@
 - Diseño Responsivo
 
   ## 📂 Estructura del proyecto
-  mi-portafolio/
-├── index.html
-├── css/
-│   └── styles.css
-├── img/
-└── README.md
+  # mi-portafolio/
+  # index.html
+  # css/
+     # styles.css
+     # img
+  # README.md
 
 ## 📌 Secciones
 - Hero / Presentación
