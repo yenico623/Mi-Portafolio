@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Yenifer Cortez, 
+     desarrollador web junior especializado en HTMLy CSS.">
+    <meta name="author" content="Yenifer Cortez.">
+    <meta property="og:title" content="Portafolio | Yenifer Cortez">
+    <meta property="og:description" content="Desarrollador Web Junior">
+    <meta property="og:type" content="website">
+    <title>Mi Portafolio || Yenifer Cortez</title>
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../K4-Portafolio-Yenifer/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- Header: Cabecera de la pagina-->
+     <header id="inicio">
+        <nav>
+            <!--div: contenedor generico-->
+            <div class="nav-logo">
+                <!--span: Contenedor en linea, sin romper el flujo del textp-->
+                <span class="logo-text">Mi <span class="accent">Portafolio</span></span>
+            </div>
+
+            <ul class="nav-menu">
+                <!--Los elementos de un menu son una lista de opciones-->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#collage">Portafolio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Abrir menú">
+                <!--Arial label: Accesiibilidadpara que los lectores lean el texto en lugar de ver el contenido visual del botón -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+     </header>
+
+     <main>
+        <!--SECCION HERO-->
+        <!--etiqueta semantica para el contenido principal de la pagina, solo se debe de tener UN main por pagina-->
+        <section id="hero" class="hero-section">
+            <!--Section: etiqueta semantica para unsa seccion tematica. teniendo cada una su propio proposito-->
+            <div class="hero-content">
+                <p class="hero-greeting">¡Hola! Soy</p>
+                <h1 class="hero-title"> Yenifer Yurley Cortez Montañez</h1>
+                <h2 class="hero-subtitle">Desarrollador Web <span class="accent">Junior</span></h2>
+                <p class="hero-description">Apasionada por crear paginas web únicas y funcionales.
+                    Especializada en <strong>HTML</strong>, <strong>CSS</strong> y pronto <strong>JavaScript</strong>
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactame</a>
+                </div>
+            </div>
+
+            <div class="hero-image" >
+                <img src="../K4-Portafolio-Yenifer/img/Yenifer_perfil.jpeg" alt="Foto Yenifer Cortez" width="300" height="300">
+            </div>
+
+        </section>
+
+        <!--SECCION DE SERVICIOS-->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Mis <span class="accent">Servicios</span></h2>
+                    <p>Lo que puedo ofrecer como desarrollador junior.</p>
+
+                    <!--linea decorativa-->
+                    <div class="section.divider"></div>
+
+                </header>
+
+                <div class="servicios-grid">
+                    <article class="service-card">
+                         <div class="card-icon">🌐</div>
+                        <h3>Desarrollo web</h3>
+                        <p>Creación de paginas web estaticas con HTML5 Y CSS3, con diseño limpio y estructurado.</p>
+                        <ul class="card-features">
+                            <li>☑️ HTML5 Semantico</li>
+                            <li>☑️ CSS moderno</li>
+                            <li>☑️Diseño responsivo</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card featured">
+                        <div class="card-badge">Destacado</div>
+                        <div class="card-icon">🎨</div>
+                        <h3>Diseño UI</h3>
+                        <p>Maquetacion de interfaces atractivas siguiendo principios de diseño web moderno</p>
+
+                        <ul class="card-features">
+                            <li>☑️ Layouts con Flexbox</li>
+                            <li>☑️ CSS Grid</li>
+                            <li>☑️ Animaciones CSS</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-icon">📱</div>
+                        <h3>Responsive Desing</h3>
+                        <p>Adaptación de paginas Web para que se vean perfectas en cualquier dispositivo.</p>
+                        <ul class="card-features">
+                            <li>☑️ Mobile Frist</li>
+                            <li>☑️ Media Queries</li>
+                            <li>☑️ Puebas en Dispositivos</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Optimización</h3>
+                        <p>Paginas rápids y optimizadas siguiendo buenas parcticas de rendimiento web.</p>
+                        <ul class="card-features">
+                            <li>☑️ Imagenes optimizadas</li>
+                            <li>☑️ Codigo limpio</li>
+                            <li>☑️ SEO básico</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="collage" class="collage-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Mi <span class="accent">Portafolio</span> Visual</h2>
+                    <p>Una muestra de mus trabajos de diseño</p>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="collage-grid">
+                    <!--CSS GRID permite crear collage complejos-->
+             
+                
+                <figure class="grid-item grid-item--large">
+                    <!--figure para contenido ilustrativo. 
+                    --large: metodología BEM bloque__elemento--modificador-->
+                    <img src="../K4-Portafolio-Yenifer/img/cafeteria.jpeg" alt="Proyecto Gestion de Cafeteria">
+                    <figcaption>Proyecto gestiones</figcaption>
+                </figure>
+
+                <figure class="grid-item">
+                <img src="../K4-Portafolio-Yenifer/img/tel.jpeg" alt="App mascotas">
+                <figcaption>Configuracion App Mascotas</figcaption>
+                </figure>
+
+                <figure class="grid-item">
+                    <img src="../K4-Portafolio-Yenifer/img/mascotas.jpeg" alt="Pagina web patitas felices">
+                    <figcaption>Patitas felices</figcaption>
+                </figure>
+
+                <figure class="grid-item">
+                    <img src="../K4-Portafolio-Yenifer/img/moda_logo.png" alt="Pagina-tienda">
+                    <figcaption>MODA & GLAM</figcaption>
+                </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <!--PROYECTOS-->
+        <section id="proyectos" class="proyectos-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Mis <span class="accent">Proyectos</span></h2>
+                    <p>Trabajos que he realizado durante mi aprendizaje</p>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="proyectos-grid">
+                    <!--Proyecto1-->
+                    <article class="proyecto-card">
+                        <div class="proyecto-image">
+                            <img src="../K4-Portafolio-Yenifer/img/github.png" alt="Proyecto 1">
+                            <div class="proyecto-overlay">
+                                <a href="#"class="btn btn-small">Ver Demo</a>
+                                <a href="https://github.com/yenico623/proyecto_gestiones.git" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="btn btn-small btn-outline">Github</a>
+                            </div>
+                        
+                        </div>
+                    
+                        <div class="proyecto-info">
+                            <h3>Proyecto Gestiones</h3>
+                            <p>Aplicacion enfocada en la gestion de herramientas en una comunidad ayudando así a mejorar la organizacion y dispoicicion del iventario.</p>
+                            <div class="proyecto-tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">GitHub</span>
+                                <span class="tag">Logica</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!--Proyecto2-->
+                    <article class="proyecto-card">
+                        <div class="proyecto-image">
+                            <img src="../K4-Portafolio-Yenifer/img/github.png" alt="Proyecto 1">
+                            <div class="proyecto-overlay">
+                                <a href="#"class="btn btn-small">Ver Demo</a>
+                                <a href="https://github.com/yenico623/Gestion-de-cafeteria.git" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="btn btn-small btn-outline">Github</a>
+                            </div>
+                        
+                        </div>
+                    
+                        <div class="proyecto-info">
+                            <h3>Gestion de Cafeteria</h3>
+                            <p>El proyecto consiste en gestionar un sistema para registrar los tipos de café en una cafetería llamada AromaCampus.</p>
+                            <div class="proyecto-tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">GitHub</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Proyecto3-->
+                   <article class="proyecto-card">
+                        <div class="proyecto-image">
+                            <img src="../K4-Portafolio-Yenifer/img/github.png" alt="Proyecto 1">
+                            <div class="proyecto-overlay">
+                                <a href="#"class="btn btn-small">Ver Demo</a>
+                                <a href="https://github.com/yenico623/patitas-felices-web.git" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="btn btn-small btn-outline">Github</a>
+                            </div>
+                        
+                        </div>
+                    
+                        <div class="proyecto-info">
+                            <h3>Patitas Felices Web</h3>
+                            <p>🐾 Maqueta web estática para la Fundación Patitas Felices.</p>
+                            <div class="proyecto-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </article>
+            </div>
+        </section>
+
+        <!--SOBRE MI-->
+        <section id="sobre-mi" class="sobre-mi-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Sobre <span class="accent">Mí</span></h2>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="sobre-mi-content">
+                    <div class="sobre-mi-image">
+                        <img src="../K4-Portafolio-Yenifer/img/Yenifer_perfil.jpeg" alt="Yenifer perfil">
+                        <div class="expirence-badge">
+                            <span class="exp-number">3+</span>
+                            <span class="exp-text">Años aprendiendo</span>
+                        </div>
+                    </div>
+
+                    <div class="sobre-mi-tetx">
+                        <h3>Desarrolladora Web en Formación</h3>
+                        <p>Estudiante de sexto semestre de Ingeniería de Sistemas,
+                            apasionada por la tecnología y el desarrollo de software, con
+                            habilidades técnicas enfocadas principalmente en Python, Java
+                            y la gestión de bases de datos.</p>
+                        <p>Me enfoco en escribir código limpio, semántico y accesible. 
+                            Creo en el aprendizaje constante y en la comunidad de desarrolladores.</p>
+
+                        <table class="info-table">
+                            <!-- caption: Titulo accesible de la tabla-->
+                            <caption>Información Personal</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Campo</th>
+                                    <th scope="col">Información</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td><strong>Nombre</strong></td>
+                                    <td>Yenifer Cortez</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ciudad</strong></td>
+                                    <td>Bucaramanga, Colombia</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Email</strong></td>
+                                    <td>
+                                        <a href="mailto: yenico623@gmial.com">yenico623@gmail.com</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--SKILLS-->
+
+                        <div class="skill-section">
+                            <h4>Mis Habilidades</h4>
+                            <!--HTML Y CSS-->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>HTML</span>
+                                    <span>88%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <!--Python-->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>PYTHON</span>
+                                    <span>100%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <!--GITHUB Y CONTROL DE VERSIONES-->
+
+                             <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>GITHUB Y CONTROL DE VERSIONES</span>
+                                    <span>100%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <!--CSS-->
+
+                             <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>CSS</span>
+                                    <span>88%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+
+                             <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>METODOLOGÍA DE SCRUM</span>
+                                    <span>100%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                             <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>BASES DE DATOS</span>
+                                    <span>80%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                             <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>JAVASCRIPT</span>
+                                    <span>50%</span>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="#contacto" class="btn btn-primary">Trabajemos juntos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FORMULARIO DE CONTACTO-->
+        <section id="contacto" class="contacto-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2><span class="accent">Contáctame</span></h2>
+                    <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="contacto-content">
+                    <aside class="contacto-info">
+                        <h3>Información de contacto</h3>
+
+                        <address>
+                            <!--Etiqueta para informacionde contacto-->
+                            <p>📍 Bucaramanga, Colombia</p>
+                            <p>📧 <a href="mailto:yenico623@gmail.com">yenico623@gmail.com</a></p>
+                            <p>📱 <a href="tel:+573175275649">+57 317 527 5649</a></p>
+                            <!-- href="tel para abrir en telefonos -->
+                            <p>💼 <a href="https://github.com/yenico623" 
+                            target="_blank" 
+                            rel="noopener noreferrer">github.com/yenico623</a></p>
+                        </address>
+                    </aside>
+
+                    <!--Formulario-->
+                    <form action="#" class="contacto-form" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">
+                                    Nombre <span class="required" aria-label="requerido">*</span>
+                                </label>
+                                <input type="text" id="nombre" name="nombre"
+                                placeholder="Tu nombre" required minlength="2" 
+                                maxlength="50">
+                            </div>
+                        
+
+                            <div class="form-group">
+                                <label for="apellido">
+                                    Apellido <span class="required" aria-label="requerido">*</span>
+                                </label>
+                                <input type="text" id="apellido" name="apellido"
+                                placeholder="Tu Apellido" required minlength="2" 
+                                maxlength="50">
+
+                            </div>
+                        </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    Email <span class="required" aria-label="requerido">*</span>
+                                </label>
+                                <input type="email" id="email" name="email"
+                                placeholder="Email" required>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono">
+                                    Telefono 
+                                </label>
+                                <input type="tel" id="telefono" name="telefono"
+                                placeholder="134 456 798" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="servicio">
+                                Selecciona el servicio que necesitas 
+                                <span class="required" aria-label="requerido">*</span>
+                                </label>
+
+                                <select name="servicio" id="servicio" required>
+                                    <option value="" disabled selected></option>
+                                    <optgroup label="Desarrollo">
+                                        <option value="landing">Landing Page</option>
+                                        <option value="blog">Blog Personal</option>
+                                        <option value="portafolio">Portafolio de Servicios</option>
+                                        <option value="ecomerce">Tienda Online</option>
+                                    </optgroup>
+
+                                    <optgroup label="Diseño">
+                                        <option value="Maquetación">Maquetacion HTML Y CSS</option>
+                                        <option value="responsive">Diseño Responsive</option>
+                                        <option value="ui">Maquetación de Interfaz</option>
+                                    </optgroup>
+
+                                    <optgroup label="Otro">
+                                        <option value="consultoria">Consultaria</option>
+                                        <option value="otro">Otro</option>
+                                    </optgroup> 
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <fieldset>
+                                    <!--Fieldset: Agrupa controles relacionados-->
+                                    <legend>Presupuesto aproximado</legend>
+                                    <div class="radio-group">
+                                        <label for="radio-label">
+                                            <input type="radio" name="presupuesto" value="+100k">
+                                            <span>Menos de $100.000</span>
+                                        </label>
+
+                                        <label class="radio-label">
+                                            <input type="radio" name="presupuesto" value="100k-300k">
+                                            <span>100.000 - 300.000</span>
+                                        </label>
+
+                                         <label class="radio-label">
+                                            <input type="radio" name="presupuesto" value="+300">
+                                            <span>Más de 300.000</span>
+                                        </label>
+
+                                         <label class="radio-label">
+                                            <input type="radio" name="presupuesto" value="negociable">
+                                            <span>Negociable</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                             <div class="form-group">
+                                <label for="mensaje">
+                                Cuéntame sobre tu proyecto 
+                                <span class="required" aria-label="requerido">*</span>
+                                </label>
+                                <textarea id="mensaje" name="mensaje" rows="6"
+                                placeholder="Describe tu proyecto: ¿qué necesitas? ¿para qué lo usarás? ¿tienes referentes visuales?"
+                                required minlength="20"maxlength="500"></textarea>
+                             </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label terms-label">
+                                <input type="checkbox" name="terminos" value="acepto" required>
+                                <span>Acepto el <a href="#" target="_blank">aviso de privacidad</a>y los 
+                                <a href="#" target="_blank">términos de contacto</a><span class="required">*</span>
+                                </span>
+                                </label>
+                            </div>
+
+                            <div class="form-action">
+                                <button type="submit" class="btn btn-primary btn-large">Enviar Mensaje</button>
+                                <button type="reset" class="btn btn-secondary">Limpiar</button>
+
+                            </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+     </main>
+
+     <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">Mi portafolio</span>
+                    <p>Desarrollador Junior</p>
+                </div>
+
+                <nav aria-label="Navegacion del footer">
+                    <h4>Navegacion</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-social">
+                    <h4>Contáme</h4>
+                    <a href="https://github.com/yenico623" target="_blank" rel="noopener noreferrer" aria-label="Github">Github</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    <small>
+                        &copy;
+                        <time datetime="2026">2026</time> Yenifer Cortez
+                    </small>
+                </p>
+
+                <P>
+                    <small>
+                        <a href="#inicio">Volvemos arriba</a>
+
+                    </small>
+                </P>
+            </div>
+        </div>
+     </footer>
+    
+</body>
+</html>
