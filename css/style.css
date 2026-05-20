@@ -92,12 +92,7 @@ ul {
 }
 
 
-/* ============================================
-   BOTONES
-   .btn es la base, .btn-primary y .btn-secondary
-   cambian solo el color. Ambos se usan juntos:
-   class="btn btn-primary"
-   ============================================ */
+/*Estilo de los botones*/
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
