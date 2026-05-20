@@ -1,30 +1,23 @@
 :root {
-  --color-principal: #e9d5ff;   /* Lila pastel */
-  --color-acento:    #fbcfe8;   /* Rosa pastel */
-  --color-suave:     #bae6fd;   /* Azul cielo */
-  --color-fondo:     #f3e8ff;   /* Fondo general lavanda */
-  --color-texto:     #1e1b4b;   /* Texto oscuro índigo */
+  --color-principal: #e9d5ff;
+  --color-acento:    #fbcfe8;
+  --color-suave:     #bae6fd;
+  --color-fondo:     #f3e8ff;
+  --color-texto:     #1e1b4b;
   --color-blanco:    #ffffff;
 
-  --fuente-titulo: 'Playfair Display', serif; /* Títulos */
-  --fuente-texto:  'Lato', sans-serif;        /* Texto normal */
+  --fuente-titulo: 'Playfair Display', serif;
+  --fuente-texto:  'Lato', sans-serif;
 }
 
-
-/* 
-   RESET-Borra los estilos que el navegador
-   pone por defecto */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* box-sizing: border-box → el padding NO agranda la caja,
-     se queda DENTRO del tamaño que se defina */
 }
 
 html {
   scroll-behavior: smooth;
-  /* Hace que la pagina se mueva sin saltar */
 }
 
 body {
@@ -32,40 +25,32 @@ body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
   line-height: 1.7;
-  /* line-height: espacio entre líneas de texto */
 }
 
 img {
   max-width: 100%;
-  /*Para que las imagenes no se salgan del contenedor */
   display: block;
 }
 
 a {
-  text-decoration: none; /* Quita el subrayado de los links */
+  text-decoration: none;
   color: var(--color-texto);
 }
 
 ul {
-  list-style: none; /* Quita los puntos de las listas */
+  list-style: none;
 }
 
-
-/* .container centra el contenido y lo limita a 1000px de ancho */
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  /* margin: 0 auto → 0 arriba/abajo, automático en los lados = centrado */
   padding: 0 1rem;
 }
 
-/* .accent colorea las palabras especiales en los títulos */
 .accent {
   color: #7c3aed;
-  /* Usamos un morado más oscuro para que se vea sobre el fondo pastel */
 }
 
-/* El encabezado que tienen todas las secciones */
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -82,7 +67,6 @@ ul {
   font-size: 1rem;
 }
 
-/* La línea decorativa debajo del título */
 .section-divider {
   width: 50px;
   height: 4px;
@@ -91,31 +75,26 @@ ul {
   border-radius: 10px;
 }
 
-
-/*Estilo de los botones*/
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  border-radius: 50px;     /* Bordes muy redondeados = pastilla */
+  border-radius: 50px;
   font-family: var(--fuente-texto);
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.3s;
-  /* transition: anima cualquier cambio de estilo en 0.3 segundos */
 }
 
 .btn-primary {
-  background-color: #7c3aed;  /* Morado sólido */
+  background-color: #7c3aed;
   color: var(--color-blanco);
 }
 
 .btn-primary:hover {
-  /* :hover se activa cuando el cursor pasa encima */
   background-color: #6d28d9;
   transform: translateY(-2px);
-  /* translateY(-2px): sube el botón 2px — efecto "se levanta" */
 }
 
 .btn-secondary {
@@ -137,30 +116,18 @@ ul {
   border-color: var(--color-blanco);
 }
 
-
-/* ============================================
-   HEADER Y NAVEGACIÓN
-   Tu HTML: <header id="inicio"> contiene <nav>
-   ============================================ */
 header {
   position: sticky;
-  /* sticky: el header se "pega" arriba de la pantalla
-     mientras haces scroll hacia abajo */
   top: 0;
   background-color: var(--color-blanco);
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   z-index: 100;
-  /* z-index: controla qué elemento aparece encima de otros.
-     100 garantiza que el menú esté siempre visible */
 }
 
 nav {
   display: flex;
-  /* flex: organiza los hijos en una fila */
   justify-content: space-between;
-  /* space-between: logo a la izquierda, menú a la derecha */
   align-items: center;
-  /* align-items: centra verticalmente logo y menú */
   padding: 1rem 2rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -175,7 +142,6 @@ nav {
 .nav-menu {
   display: flex;
   gap: 1.5rem;
-  /* gap: espacio entre cada elemento del menú */
 }
 
 .nav-menu a {
@@ -190,7 +156,7 @@ nav {
 }
 
 .hamburger {
-  display: none; /* Oculto en pantallas grandes */
+  display: none;
   flex-direction: column;
   gap: 5px;
   background: none;
@@ -206,15 +172,8 @@ nav {
   border-radius: 3px;
 }
 
-
-/* ============================================
-   HERO — La primera sección grande
-   Tu HTML: <section id="hero" class="hero-section">
-   ============================================ */
 .hero-section {
   min-height: 90vh;
-  /* 90vh = 90% del alto de la pantalla (viewport height)
-     La sección ocupa casi toda la primera pantalla */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,8 +183,6 @@ nav {
   margin: 0 auto;
 }
 
-/* NOTA: tu HTML tiene "hero-contet" (sin la n)
-   Corrígelo a "hero-content" en el HTML y usa la clase de abajo */
 .hero-content {
   max-width: 550px;
 }
@@ -241,7 +198,6 @@ nav {
   font-family: var(--fuente-titulo);
   font-size: 2.8rem;
   line-height: 1.2;
-  /* line-height bajo en títulos grandes = se ven más compactos y elegantes */
   margin-bottom: 0.5rem;
 }
 
@@ -262,21 +218,17 @@ nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  /* flex-wrap: si no caben en una fila, bajan a la siguiente */
 }
 
 .hero-image img {
   width: 280px;
   height: 280px;
-  border-radius: 50%;      /* 50% = imagen circular */
+  border-radius: 50%;
   object-fit: cover;
-  /* object-fit: cover → la imagen llena el círculo sin deformarse */
   border: 5px solid #c084fc;
   box-shadow: 0 8px 30px rgba(124,58,237,0.2);
 }
 
-
-/* SERVICIOS */
 .servicios-section {
   padding: 5rem 0;
   background-color: var(--color-blanco);
@@ -285,9 +237,6 @@ nav {
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  /* grid: crea columnas automáticamente.
-     auto-fit: tantas columnas como quepan.
-     minmax(220px, 1fr): cada columna mide mínimo 220px */
   gap: 1.5rem;
 }
 
@@ -305,7 +254,6 @@ nav {
 }
 
 .service-card.featured {
-  /* Se mantiene señalado DISEÑO UI ya que teine .featured" */
   background-color: #7c3aed;
   border-color: #7c3aed;
   color: var(--color-blanco);
@@ -346,39 +294,32 @@ nav {
 
 .service-card.featured .card-features li { color: #f3e8ff; }
 
-
-/* COLLAGE / GRID */
 .collage-section {
   padding: 5rem 0;
-  background-color: var(--color-texto); /* Fondo oscuro para contraste */
+  background-color: var(--color-texto);
 }
 
 .collage-section .section-header h2,
 .collage-section .section-header p {
-  /* Letras blancas porque el fondo es oscuro */
   color: var(--color-blanco);
 }
 
 .collage-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas del mismo ancho */
   gap: 0.8rem;
 }
 
 .grid-item {
   border-radius: 12px;
   overflow: hidden;
-  /* overflow: hidden → corta la imagen si se sale del borde */
   aspect-ratio: 1;
-  /* aspect-ratio: 1 → la altura = el ancho (cuadrado perfecto) */
   background-color: #312e81;
   position: relative;
 }
 
 .grid-item--large {
   grid-column: span 2;
-  /* span 2 → este elemento ocupa 2 columnas */
   grid-row: span 2;
   aspect-ratio: auto;
 }
@@ -392,12 +333,10 @@ nav {
 
 .grid-item:hover img {
   transform: scale(1.08);
-  /* Zoom suave al pasar el cursor */
 }
 
 .grid-item figcaption {
   position: absolute;
-  /* absolute: flota encima de la imagen */
   bottom: 0;
   left: 0;
   right: 0;
@@ -406,17 +345,13 @@ nav {
   color: var(--color-blanco);
   font-size: 0.85rem;
   transform: translateY(100%);
-  /* Empieza escondido abajo (100% = fuera de la imagen) */
   transition: transform 0.3s;
 }
 
 .grid-item:hover figcaption {
   transform: translateY(0);
-  /* Al hacer hover sube a su lugar */
 }
 
-
-/* PROYECTOS*/
 .proyectos-section {
   padding: 5rem 0;
   background-color: var(--color-blanco);
@@ -458,19 +393,17 @@ nav {
 .proyecto-overlay {
   position: absolute;
   inset: 0;
-  /* inset: 0 es igual a: top:0; right:0; bottom:0; left:0
-     Cubre toda la imagen */
   background: rgba(124, 58, 237, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  opacity: 0; /* Invisible por defecto */
+  opacity: 0;
   transition: opacity 0.3s;
 }
 
 .proyecto-card:hover .proyecto-overlay {
-  opacity: 1; /* Se muestra al hacer hover */
+  opacity: 1;
 }
 
 .proyecto-info { padding: 1.2rem; }
@@ -497,8 +430,6 @@ nav {
   font-weight: 700;
 }
 
-
-/*SOBRE MÍ */
 .sobre-mi-section {
   padding: 5rem 0;
   background-color: var(--color-fondo);
@@ -508,13 +439,11 @@ nav {
   display: flex;
   gap: 3rem;
   align-items: flex-start;
-  /* align-items: flex-start → cada columna empieza desde arriba */
 }
 
 .sobre-mi-image {
   position: relative;
   flex-shrink: 0;
-  /* flex-shrink: 0 → la imagen no se encoge si hay poco espacio */
 }
 
 .sobre-mi-image img {
@@ -548,7 +477,6 @@ nav {
 
 .sobre-mi-text,
 .sobre-mi-tetx { flex: 1; }
-/* flex: 1 → ocupa todo el espacio que quede disponible */
 
 .sobre-mi-text h3,
 .sobre-mi-tetx h3 {
@@ -564,12 +492,9 @@ nav {
   font-size: 0.95rem;
 }
 
-/* TABLA */
 .info-table {
   width: 100%;
   border-collapse: collapse;
-  /* border-collapse: une los bordes de cada celda
-     sin esto quedan separados con doble borde */
   margin: 1.5rem 0;
   font-size: 0.9rem;
 }
@@ -596,9 +521,7 @@ nav {
 
 .info-table tr:hover {
   background-color: var(--color-principal);
-  /* Resalta la fila al pasar el cursor */
 }
-
 
 .skill-section,
 .skills-section { margin: 1.5rem 0; }
@@ -628,7 +551,6 @@ nav {
   overflow: hidden;
 }
 
-
 .skill-progress,
 .skil-progress {
   height: 100%;
@@ -636,11 +558,9 @@ nav {
   border-radius: 50px;
 }
 
-
-/*FORMULARIO DE CONTACTO*/
 .contacto-section {
   padding: 5rem 0;
-  background-color: var(--color-texto); /* Fondo oscuro */
+  background-color: var(--color-texto);
 }
 
 .contacto-section .section-header h2,
@@ -651,7 +571,6 @@ nav {
 .contacto-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* aside: 1 parte, formulario: 2 partes del espacio */
   gap: 3rem;
   align-items: start;
 }
@@ -665,7 +584,6 @@ nav {
 
 .contacto-info address {
   font-style: normal;
-  /* Por defecto <address> pone el texto en cursiva. se quita */
   line-height: 2.2;
   color: rgba(255,255,255,0.8);
 }
@@ -673,7 +591,6 @@ nav {
 .contacto-info a { color: rgba(255,255,255,0.8); }
 .contacto-info a:hover { color: var(--color-acento); }
 
-/* EL FORMULARIO */
 .contacto-form {
   background-color: var(--color-blanco);
   padding: 2rem;
@@ -690,7 +607,6 @@ nav {
 
 label {
   display: block;
-  /* block → el label ocupa su propia línea arriba del input */
   font-weight: 700;
   font-size: 0.85rem;
   margin-bottom: 5px;
@@ -699,7 +615,6 @@ label {
 
 .required { color: #dc2626; }
 
-/* Todos los campos de texto tienen los mismos estilos */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -722,16 +637,13 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  /* :focus = cuando el usuario hace clic en el campo */
   outline: none;
-  /* Quita el borde azul del navegador */
   border-color: #7c3aed;
   background-color: var(--color-blanco);
 }
 
 textarea {
   resize: vertical;
-  /* El usuario solo puede agrandar hacia abajo */
   min-height: 120px;
 }
 
@@ -753,7 +665,6 @@ legend {
 .radio-group {
   display: flex;
   flex-direction: column;
-  /* flex-direction: column → apila los radios verticalmente */
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
@@ -770,12 +681,10 @@ legend {
 input[type="radio"],
 input[type="checkbox"] {
   accent-color: #7c3aed;
-  /* accent-color: cambia el color del radio/checkbox al seleccionarlo */
   width: 17px;
   height: 17px;
   cursor: pointer;
 }
-
 
 .form-action {
   display: flex;
@@ -784,8 +693,6 @@ input[type="checkbox"] {
   flex-wrap: wrap;
 }
 
-
-/* FOOTER*/
 .site-footer {
   background-color: #0f0e2a;
   color: var(--color-blanco);
@@ -827,23 +734,12 @@ input[type="checkbox"] {
   font-size: 0.85rem;
 }
 
-
-/* ============================================
-   RESPONSIVE — Para que se vea bien en celular
-   @media le dice al navegador:
-   "aplica estos estilos SOLO cuando la pantalla
-   sea de 768px o menos"
-   ============================================ */
 @media (max-width: 768px) {
-
-  /* El menú se oculta en celular */
   .nav-menu { display: none; }
   .hamburger { display: flex; }
 
-  /* El hero se apila en columna */
   .hero-section {
     flex-direction: column;
-    /* flex-direction: column → los elementos van de arriba a abajo */
     text-align: center;
     padding-top: 5rem;
     min-height: auto;
@@ -852,29 +748,23 @@ input[type="checkbox"] {
   .hero-buttons { justify-content: center; }
   .hero-image img { width: 200px; height: 200px; }
 
-  /* Sobre mí se apila */
   .sobre-mi-content {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Contacto: una sola columna */
   .contacto-content { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
 
-  /* Footer: una sola columna */
   .footer-content { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
 
-  /* Collage: 2 columnas en tablet */
   .collage-grid { grid-template-columns: repeat(2, 1fr); }
   .grid-item--large { grid-column: span 2; grid-row: span 1; }
 }
 
 @media (max-width: 480px) {
-  /* Para celulares pequeños */
   .collage-grid { grid-template-columns: 1fr; }
   .grid-item--large { grid-column: span 1; }
   .hero-title { font-size: 2rem; }
 }
-
