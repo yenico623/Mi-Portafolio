@@ -10,6 +10,8 @@
   --fuente-texto:  'Lato', sans-serif;
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -228,6 +230,8 @@ nav {
   border: 5px solid #c084fc;
   box-shadow: 0 8px 30px rgba(124,58,237,0.2);
 }
+
+
 
 .servicios-section {
   padding: 5rem 0;
